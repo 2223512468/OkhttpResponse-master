@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="OkhttpResponse:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="OkhttpResponse.war">
+      <element id="artifact" artifact-name="OkhttpResponse:war exploded" />
+    </root>
+  </artifact>
+</component>
