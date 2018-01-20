@@ -79,7 +79,7 @@ public class FileController {
 
             MultipartHttpServletRequest multReq = (MultipartHttpServletRequest) req;
             MultipartFile image = multReq.getFile("image");
-            
+
             int state = 0;
             String code = "上传成功";
 
@@ -95,7 +95,16 @@ public class FileController {
             resp.getWriter().write("不是上传操作");
             return;
         }
+    }
 
+    @RequestMapping(value = "/json", method = {RequestMethod.POST})
+    public void JsonAndSession(HttpServletRequest req, HttpServletResponse resp) {
+
+        String json = req.getParameter("json");
+        String session = req.getParameter("session");
+        System.out.println("json" + json);
+        System.out.println("session" + session);
 
     }
+
 }
